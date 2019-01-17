@@ -1,0 +1,51 @@
+{
+  "start": "Wed Aug 01 00:00:00 2018",
+  "end": "Tue Jan 08 00:00:00 2019",
+  "exts": ["hdf5"],
+  "max_chunk_length": 3600,
+  "channels": [
+    "H1:GRD-ISC_LOCK_STATE_N"
+  ],
+  "trends": [
+    ""
+  ],
+  "dq_flags": [],
+  "max_chunk_length": 3600,
+  "slow_channel_plots": {
+    "height": 10.0,
+    "width": 7.5,
+    "channel_descriptions": {
+      "H1:GRD-ISC_LOCK_STATE_N": "LHO ISC Lock"
+    },
+    "plots": [
+      {
+        "plot_properties": {
+          "detrend": "none",
+          "#handle_missing_values": "hide",
+          "#handle_unrecorded_values": "hide",
+          "omitted_indices": [],
+          "outliers_lower_bound": -1e-5,
+          "outliers_upper_bound":  1e-5,
+          "fname_desc": "original-data"
+        },
+        "dq_flag": null,
+        "channel": "H1:GRD-ISC_LOCK_STATE_N"
+      },
+      {
+        "plot_properties": {
+          "detrend": "linear",
+          "#handle_missing_values": "hide",
+          "#handle_unrecorded_values": "hide",
+          "omitted_indices": [],
+          "outliers_lower_bound": -1e-5,
+          "outliers_upper_bound":  1e-5,
+          "ylim_top": 220,
+          "ylim_bottom": -220
+        },
+        "dq_flag": null,
+        "channel": "H1:GRD-ISC_LOCK_STATE_N"
+      }
+    ],
+    "run": "post-O2"
+  }
+}
