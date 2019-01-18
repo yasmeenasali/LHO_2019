@@ -1,4 +1,6 @@
 #! /usr/bin/env python
+# (c) Yasmeen Asali, Ana Lam, Madox McGrae-Menge
+
 import matplotlib
 matplotlib.use('agg')
 import h5py 
