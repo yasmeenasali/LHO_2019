@@ -32,7 +32,7 @@ Note that since data is appended to the JSON file, running the code more than on
 
 ## Plotting DRMI attempts
 
-Using `durations.json`, you can generate plots with the `plot\_DRMI\_stats.ipynb` notebook. 
+Using `durations.json`, you can generate plots with the `plot_DRMI_stats.ipynb` notebook. 
 
 
 
