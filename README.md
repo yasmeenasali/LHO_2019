@@ -2,6 +2,14 @@
 
 Scripts for downloading large chunks of data and plotting durations of DRMI locking attempts.
 
+## Clone this repository
+
+Start by cloning this repository with the following instructions. You should clone the repository in an empty directory, and you can name it however you like. Here we name it `dev`. 
+
+`mkdir dev`
+`cd dev`
+`git clone https://github.com/ysa2106/LHO_2019.git`
+
 ## Downloading Data
 
 Large chunks of data can be downloaded with `geco_gwpy_dump.py` by running it in terminal. We recommended to run this on the cluster. The time window can be set in `jobspec.json` which is a file called by `geco_gwpy_dump.py` to specify the parameters of your desired data download. The `geco_gwpy_dump.py` script outputs a series of `HDF5` files with a max chunk length that determines how much data (in seconds) should be downloaded at once. For trends, you can specify second or minute trends.
@@ -32,7 +40,7 @@ Note that since data is appended to the JSON file, running the code more than on
 
 ## Plotting DRMI attempts
 
-Using `durations.json`, you can generate plots with the `plot_DRMI_stats.ipynb` notebook. 
+Using `durations.json`, you can generate plots wnd run statistical tests with the `plot_DRMI_stats.ipynb` notebook. 
 
 
 
