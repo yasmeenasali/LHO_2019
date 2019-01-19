@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-# (c) Yasmeen Asali, Ana Lam, Madox McGrae-Menge
+# (c) Yasmeen Asali, Ana Lam, Madox McGrae-Menge, Emily Calamari
 
 import matplotlib
 matplotlib.use('agg')
@@ -8,6 +8,16 @@ import matplotlib.pyplot as plt
 import os, fnmatch
 import numpy as np
 import json
+import argparse
+
+DESC="""A python script for appending data to a specificied JSON file containing the durations and outcome of each locking attempt.
+Note that to run this script you will need generate a list of filenames from the HDF5 files. You will also need a JSON file called 'durations.json' where the data will be appended. Note that since data is appended to the JSON file, running the code more than once on the same HDF5 files will create duplicate entries.
+
+The contents of the JSON file should be:
+{"time": [], "dur_suc": [], "dur_fail": []}"""
+
+parser = argparse.ArgumentParser(description=DESC)
+args = parser.parse_args()
 
 f = open('filenames.txt')
 names = f.readlines()
