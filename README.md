@@ -6,8 +6,8 @@ Scripts for downloading large chunks of data and plotting durations of DRMI lock
 
 Start by cloning this repository with the following instructions. You should clone the repository in an empty directory, and you can name it however you like. Here we name it `dev`. 
 
-`mkdir dev`
-`cd dev`
+`mkdir dev`<br>
+`cd dev`<br>
 `git clone https://github.com/ysa2106/LHO_2019.git`
 
 ## Downloading Data
